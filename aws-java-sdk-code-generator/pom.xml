@@ -40,7 +40,7 @@
         <artifactId>freemarker</artifactId>
         <groupId>org.freemarker</groupId>
         <optional>false</optional>
-        <version>2.3.24-incubating</version>
+        <version>2.3.30</version>
     </dependency>
     <dependency>
         <artifactId>jmespath-java</artifactId>
