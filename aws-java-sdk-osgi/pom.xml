@@ -1935,7 +1935,7 @@
                     TODO Remove this when the symlink issue is resolved -->
                   <plugin>
                       <artifactId>maven-resources-plugin</artifactId>
-                      <version>2.7</version>
+                      <version>3.2.0</version>
                       <executions>
                           <execution>
                               <id>copy-resources</id>
