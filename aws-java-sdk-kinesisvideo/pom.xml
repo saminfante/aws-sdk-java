@@ -71,7 +71,7 @@
           <plugin>
             <groupId>com.github.siom79.japicmp</groupId>
             <artifactId>japicmp-maven-plugin</artifactId>
-            <version>0.5.0</version>
+            <version>0.15.2</version>
             <executions>
               <execution>
                 <phase>verify</phase>
