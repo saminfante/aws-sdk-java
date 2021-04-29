@@ -1,0 +1,77 @@
+version: 2
+registries:
+  git-github-com:
+    type: git
+    url: https://github.com
+    username: saminfante
+    password: "${{secrets.GIT_GITHUB_COM_PASSWORD}}"
+
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "13:49"
+    timezone: US/Central
+  open-pull-requests-limit: 99
+  ignore:
+  - dependency-name: io.netty:netty-handler
+    versions:
+    - 4.1.58.Final
+    - 4.1.59.Final
+    - 4.1.60.Final
+    - 4.1.61.Final
+    - 4.1.62.Final
+  - dependency-name: io.netty:netty-codec-http
+    versions:
+    - 4.1.58.Final
+    - 4.1.59.Final
+    - 4.1.60.Final
+    - 4.1.61.Final
+    - 4.1.62.Final
+  - dependency-name: com.fasterxml.jackson.dataformat:jackson-dataformat-cbor
+    versions:
+    - 2.12.1
+    - 2.12.2
+  - dependency-name: com.google.inject:guice
+    versions:
+    - 4.2.3
+    - 5.0.0
+  - dependency-name: nl.jqno.equalsverifier:equalsverifier
+    versions:
+    - 3.5.2
+    - 3.5.3
+    - 3.5.4
+    - 3.5.5
+  - dependency-name: com.github.siom79.japicmp:japicmp-maven-plugin
+    versions:
+    - 0.15.2
+  - dependency-name: joda-time:joda-time
+    versions:
+    - 2.10.9
+  - dependency-name: org.eclipse.jdt:org.eclipse.jdt.core
+    versions:
+    - 3.24.0
+  - dependency-name: org.apache.commons:commons-lang3
+    versions:
+    - "3.11"
+  - dependency-name: org.apache.felix:maven-bundle-plugin
+    versions:
+    - 5.1.1
+  - dependency-name: org.freemarker:freemarker
+    versions:
+    - 2.3.30
+  - dependency-name: org.easymock:easymock
+    versions:
+    - "4.2"
+  - dependency-name: org.apache.maven:maven-plugin-api
+    versions:
+    - 3.6.3
+  - dependency-name: org.apache.maven.plugins:maven-plugin-plugin
+    versions:
+    - 3.6.0
+  - dependency-name: org.apache.maven.plugin-tools:maven-plugin-annotations
+    versions:
+    - 3.6.0
+  registries:
+  - git-github-com
