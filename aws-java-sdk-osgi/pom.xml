@@ -1038,7 +1038,7 @@
           <plugin>
               <groupId>com.ruleoftech</groupId>
               <artifactId>markdown-page-generator-plugin</artifactId>
-              <version>0.8</version>
+              <version>2.3.1</version>
               <executions>
                   <execution>
                       <phase>process-sources</phase>
